@@ -27,7 +27,7 @@ if (!announcements) {
 function saveToStorage() {
   localStorage.setItem('announcements', JSON.stringify(announcements))
 }
-  */
+*/
 export async function fetchAnnouncements() {
   try {
     const response = await fetch("https://onep1-announcements.onrender.com/announcements");
