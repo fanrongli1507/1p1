@@ -9,8 +9,10 @@ document.querySelector(".js-submit").addEventListener("click", async () => {
     "date-created": new Date(),
     "deadline": deadline,
   };
-  if (name && content && deadline) {
-    alert('Please fill up all areas.')
+
+  // Check if all fields are filled
+  if (!name || !content || !deadline) {
+    alert('Please fill up all areas.');
   } else {
     try {
       const response = await fetch("https://onep1-announcements.onrender.com/announcements", {
