@@ -10,8 +10,7 @@ html{
 body {
   margin: 0;
   padding: 0;
-
-  min-height: 100vh; /* Ensures full viewport height */
+  min-height: 100vh;
 }
 
 .container1{
@@ -20,6 +19,7 @@ body {
   margin-bottom: 20px;
   padding: 20px;
 }
+
 .title {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -28,22 +28,15 @@ body {
   height: 100%;
   
 
-  .center-box {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  };
+  
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  
   
 }
 
-.title p{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 0px;
-}
+
 .announcement {
   text-align: center;
   width: 100%; /* Ensure full width inside the grid cell */

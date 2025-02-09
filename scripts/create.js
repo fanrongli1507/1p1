@@ -23,6 +23,10 @@ document.querySelector(".js-submit").addEventListener("click", async () => {
 
     const data = await response.json();
     console.log(data);
+    alert('Sent successfully.');
+    document.querySelector(".js-name").value ='';
+    document.querySelector(".js-content").value = '';
+    document.querySelector(".js-deadline").value ='';
   } catch (error) {
     console.error("Error:", error);
   }
