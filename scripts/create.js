@@ -1,7 +1,8 @@
 document.querySelector(".js-submit").addEventListener("click", async () => {
   const name = document.querySelector(".js-name").value;
   const content = document.querySelector(".js-content").value;
-  const deadline = document.querySelector(".js-deadline").value;
+  const deadline = `${document.querySelector(".js-deadline").value}T15:59:59`
+  ;
 
   const announcement = {
     "name": name,
@@ -10,7 +11,6 @@ document.querySelector(".js-submit").addEventListener("click", async () => {
     "deadline": deadline,
   };
 
-  // Check if all fields are filled
   if (!name || !content || !deadline) {
     alert('Please fill up all areas.');
   } else {
@@ -26,7 +26,7 @@ document.querySelector(".js-submit").addEventListener("click", async () => {
       const data = await response.json();
       console.log(data);
       alert('Sent successfully.');
-      // Clear the form after submission
+
       document.querySelector(".js-name").value = '';
       document.querySelector(".js-content").value = '';
       document.querySelector(".js-deadline").value = '';
