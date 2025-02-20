@@ -5,15 +5,15 @@ document.querySelector(".js-submit").addEventListener("click", async () => {
   ;
 
 
-if (!name || !content || deadline === 'T15:59:59') {
-  alert('Please fill up all areas.');
-} else {
-  const announcement = {
-    "name": name,
-    "content": content,
-    "date-created": new Date(),
-    "deadline": deadline,
-  };
+  if (!name || !content || deadline === 'T15:59:59') {
+    alert('Please fill up all areas.');
+  } else {
+    const announcement = {
+      "name": name,
+      "content": content,
+      "date-created": new Date(),
+      "deadline": deadline,
+    };
 
 
 
