@@ -65,6 +65,7 @@ body {
   margin: 5px;
   border-radius: 15px;
   width: 90%;
+  white-space: pre-line;
 }
 
 .white-bg {
@@ -75,6 +76,7 @@ body {
   margin: 5px;
   border-radius: 15px;
   width: 90%;
+  white-space: pre-line;
 }
 
 
