@@ -65,7 +65,7 @@ body {
   margin: 5px;
   border-radius: 15px;
   width: 90%;
-  white-space: pre-line;
+
 }
 
 .white-bg {
@@ -76,10 +76,15 @@ body {
   margin: 5px;
   border-radius: 15px;
   width: 90%;
-  white-space: pre-line;
+
 }
 
-
+.black-bg div{
+  white-space: pre-line;
+}
+.white-bg div{
+  white-space: pre-line;
+}
 
 .name {
   display: flex;
